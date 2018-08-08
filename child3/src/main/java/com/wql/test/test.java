@@ -38,6 +38,7 @@ public class test extends HttpServlet {
         Test t= new Test();
         t.test(name);
         t.test("第一次修改");
+        t.test("第二次修改");
         req.setAttribute("name",name);
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
